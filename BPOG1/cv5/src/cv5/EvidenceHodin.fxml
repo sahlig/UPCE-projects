@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="925.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cv5.EvidenceHodinController">
+   <children>
+      <BorderPane prefHeight="697.0" prefWidth="925.0">
+         <bottom>
+            <FlowPane alignment="CENTER_LEFT" hgap="10.0" prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#onAdd" text="Pridej" />
+                  <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#onDelete" text="Smaz vse" />
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </FlowPane>
+         </bottom>
+         <center>
+            <PieChart fx:id="pieChart" prefHeight="607.0" prefWidth="728.0" title="Rozdeleni studentu" BorderPane.alignment="CENTER" />
+         </center>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <left>
+            <TableView fx:id="tableViewWorkers" prefHeight="607.0" prefWidth="359.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="tableViewColId" onEditCommit="#onActionColId" prefWidth="77.0" sortable="false" text="ID" />
+                <TableColumn fx:id="tableViewColName" onEditCommit="#onActionColName" prefWidth="116.0" sortable="false" text="Jmeno" />
+                  <TableColumn fx:id="tableViewColSurname" onEditCommit="#onActionColSurname" prefWidth="117.0" text="Prijmeni" />
+                  <TableColumn fx:id="tableViewColYear" onEditCommit="#onActionColYear" prefWidth="48.0" text="Rocnik" />
+              </columns>
+            </TableView>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
