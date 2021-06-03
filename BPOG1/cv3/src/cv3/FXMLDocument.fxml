@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="641.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="cv3.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="52.0" layoutY="57.0" text="Member List">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="452.0" text="Add member:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listThis" layoutX="31.0" layoutY="114.0" prefHeight="325.0" prefWidth="579.0" />
+      <TextField fx:id="addTextField" layoutX="208.0" layoutY="458.0" prefHeight="25.0" prefWidth="230.0" />
+      <Button fx:id="addButton" layoutX="466.0" layoutY="458.0" mnemonicParsing="false" onAction="#addThis" text="Add" />
+      <Button fx:id="removeAllButton" layoutX="535.0" layoutY="46.0" mnemonicParsing="false" onAction="#removeAll" text="Remove all" />
+      <Button fx:id="removeOneButton" layoutX="456.0" layoutY="45.0" mnemonicParsing="false" onAction="#removeOne" text="Remove" />
+    </children>
+</AnchorPane>
