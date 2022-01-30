@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BDAS1_model_final" id="3B15DA63-775F-4C3C-EE0B-7A5A1BDE02C4" version="3.5">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:23:27 UTC</createdTime>
+<ownerDesignName>BDAS1_model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3B15DA63-775F-4C3C-EE0B-7A5A1BDE02C4</designId>
+</OSDM_Design>

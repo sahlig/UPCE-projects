@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE69DF11-A2CA-4371-5778-F884AEEFDAB5" name="Incidenty">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabluka uchovává incidenty, které psi způsobili]]></commentInRDBMS>
+<generatorID>6A448359-7091-98F1-C54A-C22B61A76BF4</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>incident</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_incident" id="B66A00D6-9965-75DE-EF03-73D79A93A7B7">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč incidentu]]></commentInRDBMS>
+<generatorID>EF390200-9C4D-0E85-4EA1-E4909FDD3D94</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum" id="F45B6B35-54ED-F0A4-10E4-0B43987DBD03">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum, kdy se incident stal]]></commentInRDBMS>
+<generatorID>3CB2BADC-FE95-A91A-2213-C0B3BF2666BE</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="76E10996-2715-9D40-C411-9B5166A37038">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Popis incidentu]]></commentInRDBMS>
+<generatorID>9CA04A92-F943-4885-72DD-C8ACFBB40248</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pes" id="00B7403E-4898-93AA-EF50-80FD58D3CE42">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID psa, který incident způsobil]]></commentInRDBMS>
+<generatorID>FD9AE919-DC60-79A9-AC77-C63C1E5AC888</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA96F66B-B85A-1DB1-D36D-85AC29C0EDD8" referredColumn="F3F21815-A939-402C-A7A6-8DBA23288F02"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E64786D4-641F-AF96-1224-CD0072D98135" name="Incidenty_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>B0FDBF1A-6629-B814-A306-13E8B41F8521</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B66A00D6-9965-75DE-EF03-73D79A93A7B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECC697A6-1D90-5EAD-3762-9B8B25722AF3" name="Incidenty_Pes_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>0E2F51EF-B1E1-5F36-7624-2432124DEB43</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00B7403E-4898-93AA-EF50-80FD58D3CE42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

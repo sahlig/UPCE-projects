@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="80F04429-9F4C-6ADD-C5D3-46D613149087" containerWithKeyObject="316E06F5-6F21-A981-9323-592C481BA49C" localFKIndex="F570F490-F7B7-185C-FB0E-9B5E9A47C5CC" name="Procedury_Kliniky_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<comment><![CDATA[ID kliniky v této tabulce odkazuje na tabulku VETERINARNIKLINIKY]]></comment>
+<generatorID>DF29BA5F-8CD9-DF3E-AE0F-D9285EEDF23F</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<referredTableLongName>VeterinarniKliniky</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3DDA0231-72B3-3F2C-00EE-853A17F9B85E</referredTableID>
+<keyObject>2B064E4F-D076-1C73-6B98-9E22E0D33F9C</keyObject>
+<referredKeyID>2B064E4F-D076-1C73-6B98-9E22E0D33F9C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_klinika</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

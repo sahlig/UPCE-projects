@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3E17607-B85C-39A3-9485-9F2423A31EBD" name="AdoptovaniNavraceni">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává záznamy o adpoci a navrácení psů]]></commentInRDBMS>
+<generatorID>EBBC633B-E8B8-7AE0-AD1B-B1F20F6BC8C9</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>adoptovanynavraceny</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="datum" id="2661F0C9-D12A-24B7-E1CD-A575D2AA0D0F">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum adopce/navrácení]]></commentInRDBMS>
+<generatorID>1727A73D-F0D8-962B-77AB-A226F893AD1A</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adop_nav" id="C93841EE-D523-72AE-0AB0-4A37F1FE395D">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Udává zda byl pes adoptován nebo navrácen
+0 - pes byl adoptovaný
+1 - pes byl navrácený původnímu majiteli]]></commentInRDBMS>
+<generatorID>030F39E1-7999-B8D9-DA28-9E7E5DEC3C2C</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pes" id="4E1824BB-D842-BF48-FB8E-40E2583F093C">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID adoptovaného/navrácenéhop psa]]></commentInRDBMS>
+<generatorID>38A27BC4-7164-994C-FDA6-573D3BC65A48</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="028D384A-31BA-6105-FFF0-9162BE015D27" referredColumn="F3F21815-A939-402C-A7A6-8DBA23288F02"/>
+</associations>
+</Column>
+<Column name="id_osoba" id="A69F0DC9-0D9C-1F4A-2B3B-45DB07F25BE1">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID osoby, která adoptuje/je majitelem]]></commentInRDBMS>
+<generatorID>14CD26B5-A4A6-3F3C-13AC-AFCB1B86320D</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F80CAA0-B475-39B0-6ED6-D1B4537F88A0" referredColumn="6EF06846-F6F7-FEF4-9B1B-11DA1CFB2258"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F24ABA56-EDA2-C5DA-5110-A84B188CD360" name="AdoptovanyNavraceny_Osoby_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>6FBA6D13-0739-62FE-1BE3-AD572B3B6085</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A69F0DC9-0D9C-1F4A-2B3B-45DB07F25BE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD82627B-C04C-0A25-C3EA-EE3140A02686" name="AdoptovanyNavraceny_Pes_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>70678642-453A-8D7C-A395-7A84BCB17BDA</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E1824BB-D842-BF48-FB8E-40E2583F093C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="18529754-28E1-5193-31B5-A7BBE06D8A91" containerWithKeyObject="D1ECB9A6-CB97-9B8D-1340-09AFA94C32A2" localFKIndex="97B08000-52F8-9333-3A97-DB2D748DF0AF" name="Odchyceny_Pes_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<comment><![CDATA[ID psa v této tabulce odkazue na tabulku PSI]]></comment>
+<generatorID>FFEE66FB-6FDA-FDB3-A350-727B0DFFE937</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<referredTableLongName>Psi</referredTableLongName>
+<arc>6CA1A27D-F1F2-BEA7-EABA-1E6C3AF8E0BB</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>48972387-B7AB-8953-33F4-998A0399F183</referredTableID>
+<keyObject>B7B5A52B-1045-9A8B-DBB8-71F2D3570A0C</keyObject>
+<referredKeyID>B7B5A52B-1045-9A8B-DBB8-71F2D3570A0C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pes</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>H</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

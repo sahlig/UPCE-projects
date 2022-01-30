@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5C9300C1-B942-AAE5-153D-7F3003CBF6D9" name="Rezervace">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:48:56 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_rezervace" id="CD0027C0-2720-FC56-395A-AFEC6C020423">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:49:07 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum" id="E4F178C0-801A-AAF1-7556-CE7E2E9A3462">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:49:07 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pes" id="8FA24FBD-5512-63B5-0C51-6E349F2E17BF">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:58:24 UTC</createdTime>
+<generatorID>15D817DA-6D54-A88B-B020-3939B06DCF3B</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<referedAttribute>5A31A62D-709F-824B-C198-B1F2034970E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_osoba" id="A876BEC7-CD48-827F-BA90-81F529A9EBE8">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:01:06 UTC</createdTime>
+<generatorID>07170265-A450-74C4-D535-1F5EAF83ECAE</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<referedAttribute>C2189DDE-E4E2-C6CF-0C9A-8D6913F4E4A3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5188C79E-B4D8-6EDA-B177-889EF0335881" name="Rezervace PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:49:17 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CD0027C0-2720-FC56-395A-AFEC6C020423</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E2061DC8-794A-1F63-C225-016BB50A913B" containerWithKeyObject="99D04A27-72BE-7C27-EAF1-C4BB55BF61DF" localFKIndex="9E6AB9F5-19A8-A126-72BD-677D9BA34C5C" name="Vychazky_Osoby_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<comment><![CDATA[ID osoby v této tabulce odkazuje na tabulku OSOBY]]></comment>
+<generatorID>053785E9-0A07-94E7-189B-4BDC06BD8415</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<referredTableLongName>Osoby</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E1628F90-5191-E75E-EA39-43C443ACF11D</referredTableID>
+<keyObject>82ADD311-1B6D-4CF0-B5E3-F1BD38BD541D</keyObject>
+<referredKeyID>82ADD311-1B6D-4CF0-B5E3-F1BD38BD541D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_osoba</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

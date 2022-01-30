@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E238039-A166-6786-ED53-5767DC1D0908" name="Odchyceny">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:28:09 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>5D81DE4A-D477-54F1-0AF3-9F0D1273C692</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="misto" id="77F010F9-AB54-790F-ECA3-729C14A6316C">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:28:24 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum" id="2E1BC385-2AD4-E9B7-A264-F60708C16059">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:28:24 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

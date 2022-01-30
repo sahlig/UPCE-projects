@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99D04A27-72BE-7C27-EAF1-C4BB55BF61DF" name="Vychazky">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává záznamy o venčení psů]]></commentInRDBMS>
+<generatorID>C6012996-C687-CADF-4B86-E64AB433E736</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>vychazka</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vychazka" id="9F9049C0-5739-63E3-D24B-53B68E08B182">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč vycházky]]></commentInRDBMS>
+<generatorID>1685391D-BC3B-C213-C9B4-28D23DB31BE5</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum" id="9240D9B4-035D-4BAC-F20C-79840A5E5E68">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum, kdy byl pes na vycházce]]></commentInRDBMS>
+<generatorID>29BD7F91-C71F-6D48-06D6-C7C31220D9D6</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pes" id="6E56A5CE-6E91-F692-B7D1-97DD121BF78D">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID venčeného psa]]></commentInRDBMS>
+<generatorID>AD1CD16D-120E-D86C-26F6-5415DFD25E51</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50821539-AFC2-F9D9-1916-0014E8C59E60" referredColumn="F3F21815-A939-402C-A7A6-8DBA23288F02"/>
+</associations>
+</Column>
+<Column name="id_osoba" id="5CD251B1-D266-47D1-18F9-341EAE10548C">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID osoby, která psa venčila]]></commentInRDBMS>
+<generatorID>948DDB01-EE66-A773-F820-1597B28C633F</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2061DC8-794A-1F63-C225-016BB50A913B" referredColumn="6EF06846-F6F7-FEF4-9B1B-11DA1CFB2258"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="303ECBF4-64BF-A73B-F987-2F6463D19931" name="Vychazky_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>9633DA2A-D509-4EE5-7371-B2BCD0978732</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F9049C0-5739-63E3-D24B-53B68E08B182"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E6AB9F5-19A8-A126-72BD-677D9BA34C5C" name="Vychazky_Osoby_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>053785E9-0A07-94E7-189B-4BDC06BD8415</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CD251B1-D266-47D1-18F9-341EAE10548C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94B3B947-8A56-C1C3-6386-289F85BBB974" name="Vychazky_Pes_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>D3A6A539-42E8-B21F-ACD1-4198175504E7</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E56A5CE-6E91-F692-B7D1-97DD121BF78D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

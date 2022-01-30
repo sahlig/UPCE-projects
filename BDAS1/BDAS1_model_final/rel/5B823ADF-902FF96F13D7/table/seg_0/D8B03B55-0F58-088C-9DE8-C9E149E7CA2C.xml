@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8B03B55-0F58-088C-9DE8-C9E149E7CA2C" name="Dary">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává záznamy o darech, které byli darovány útulku od osob]]></commentInRDBMS>
+<generatorID>72547B0A-087E-B770-0C78-E47E31BA5795</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>dar</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_dar" id="A39ED2D4-3EB2-8897-8418-179B05171655">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč darů]]></commentInRDBMS>
+<generatorID>A518AFB7-3221-FA7F-4AC9-B26A7DD4ACDE</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obnos" id="2D8FF08D-B5FB-DADC-C2AE-50B01AF066D9">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Obnos, který byl útulku předán
+Dar musí být peněžní nebo věcný, tím pádem musí být vyplněno alespoň ostatní nebo obnos, nelze mít dar bez ničeho]]></commentInRDBMS>
+<generatorID>17F078B7-B403-53AE-EE32-E52509569734</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ostatni" id="58C6EE1A-855A-2064-03D5-DED6BC6D4E91">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ostatní majetkové dary, které byli útulku předány
+Dar musí být peněžní nebo věcný, tím pádem musí být vyplněno alespoň ostatní nebo obnos, nelze mít dar bez ničeho.]]></commentInRDBMS>
+<generatorID>54D4DBC6-27D9-6474-1904-F6482CE42222</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum" id="78E49348-2945-7ADB-0B35-0328FC3E98B4">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum, kdybyl da útulku předán]]></commentInRDBMS>
+<generatorID>CEF307B1-29DE-A5C7-91F8-439B7F1C5B2C</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_osoba" id="8213A06C-44BC-1596-1062-FF808FB1735D">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID osoby, která darovala]]></commentInRDBMS>
+<generatorID>58793C4C-0B58-7A86-9BA2-1FA7AAEB428B</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="450E0F30-FA87-ED49-6133-85749DCEAEE0" referredColumn="6EF06846-F6F7-FEF4-9B1B-11DA1CFB2258"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="205DA385-D59A-9330-29B0-20BEE39D2741" name="Dary_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>88C2867E-1C91-05AA-E658-C40BE2F73DFB</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A39ED2D4-3EB2-8897-8418-179B05171655"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54013A36-F2FF-4132-4B1B-474AF230BBD8" name="Dary_Osoby_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>33A63033-2B4E-8890-E374-925EE1F83EEA</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8213A06C-44BC-1596-1062-FF808FB1735D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

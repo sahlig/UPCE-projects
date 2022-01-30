@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1628F90-5191-E75E-EA39-43C443ACF11D" name="Osoby">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává osoby, které interagují s útulkem]]></commentInRDBMS>
+<generatorID>91B43ABB-514A-041D-5494-941DA595C43B</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>osoba</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_osoba" id="6EF06846-F6F7-FEF4-9B1B-11DA1CFB2258">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč osoby]]></commentInRDBMS>
+<generatorID>C2189DDE-E4E2-C6CF-0C9A-8D6913F4E4A3</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmeno" id="A4C14ECA-7A76-6FAD-9E24-ACED8B48D403">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Jméno osoby]]></commentInRDBMS>
+<generatorID>D920A053-8E30-5293-114B-FFA66E00FC5D</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prijmeni" id="8DC77CEB-5ED2-48FB-AA51-2D0A19B9BF5C">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Přijmení osoby]]></commentInRDBMS>
+<generatorID>EF8AE55F-F783-574F-4613-B82C52244149</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa" id="95EFB45F-B16D-9B93-5B06-032EE4066A5B">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Adresa, kde osoba žije]]></commentInRDBMS>
+<generatorID>CD3B73C8-6E01-B1D8-DE8D-7CA0E09ABB8C</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefonni_cislo" id="BB386673-5909-9893-D1AE-AED7E7959212">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefonní číslo osoby]]></commentInRDBMS>
+<generatorID>9E30212C-659D-20C3-B13C-6C663579E0F4</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82ADD311-1B6D-4CF0-B5E3-F1BD38BD541D" name="Osoby_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>4F1689E0-46F3-2C7A-F988-3DC3BBCE3588</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EF06846-F6F7-FEF4-9B1B-11DA1CFB2258"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1ECB9A6-CB97-9B8D-1340-09AFA94C32A2" name="Odchyceni">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává psy, kteří byli odchyceni]]></commentInRDBMS>
+<generatorID>6E238039-A166-6786-ED53-5767DC1D0908</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>odchyceny</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pes" id="60242694-5D05-CC23-FF12-046DC284588F">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID psa z databáze]]></commentInRDBMS>
+<generatorID>5A31A62D-709F-824B-C198-B1F2034970E9</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18529754-28E1-5193-31B5-A7BBE06D8A91" referredColumn="F3F21815-A939-402C-A7A6-8DBA23288F02"/>
+</associations>
+</Column>
+<Column name="misto" id="826663F6-363F-3E81-3B62-AA46A4DAEB2F">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Místo, kde byl pes odchycen]]></commentInRDBMS>
+<generatorID>77F010F9-AB54-790F-ECA3-729C14A6316C</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum" id="5101F346-204E-9AB1-4E8A-9E5EFD8B8604">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum, kdy byl pes odchycen]]></commentInRDBMS>
+<generatorID>2E1BC385-2AD4-E9B7-A264-F60708C16059</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA450E0F-EC38-A3EE-84A0-35FA8B46CBEA" name="Odchyceny_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>141F7EFE-9608-8475-E552-3BEA221A14E6</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60242694-5D05-CC23-FF12-046DC284588F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97B08000-52F8-9333-3A97-DB2D748DF0AF" name="Odchyceny_Pes_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>FFEE66FB-6FDA-FDB3-A350-727B0DFFE937</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60242694-5D05-CC23-FF12-046DC284588F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

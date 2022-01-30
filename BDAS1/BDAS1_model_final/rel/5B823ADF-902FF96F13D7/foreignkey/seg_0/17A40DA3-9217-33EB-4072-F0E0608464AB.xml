@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="17A40DA3-9217-33EB-4072-F0E0608464AB" containerWithKeyObject="48972387-B7AB-8953-33F4-998A0399F183" localFKIndex="C8F59071-1006-10F0-3264-E5F6B36A6875" name="Pes_Plemena_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<comment><![CDATA[ID plemena v této tabulce odkazuje na tabulku PLEMENA]]></comment>
+<generatorID>C4A031E2-97B6-2B28-7401-796097E6AEB5</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<referredTableLongName>Plemena</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FC0171EE-20F1-6DBA-41AA-E9D45364AC0D</referredTableID>
+<keyObject>15A2B354-635F-6C1F-4847-BDEB7E5E839A</keyObject>
+<referredKeyID>15A2B354-635F-6C1F-4847-BDEB7E5E839A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_plemeno</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

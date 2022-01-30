@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4E29804-C4B7-22F3-4A3E-62674F93ED39" name="Procedura">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:52:29 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_procedura" id="68296AC8-4544-9547-D8F3-58E3B7B2D5DE">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:52:34 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="popis" id="25D63D71-1C4B-9702-36FC-B0B9B1F2C0AA">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:52:36 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum" id="9F723550-F6A1-B997-78B3-DA263F76C8CF">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:52:36 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cena" id="7B6610EE-1C18-D552-83FA-C3D2FE06417D">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:52:37 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_klinika" id="B06A2A07-CB2C-FA1B-2D83-5B4A064133F5">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:06:23 UTC</createdTime>
+<generatorID>DF29BA5F-8CD9-DF3E-AE0F-D9285EEDF23F</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<referedAttribute>39D928A6-14C5-AAA7-604D-02628155969A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pes" id="A2C63129-B925-E1EB-746A-AC9E628C4B50">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:06:50 UTC</createdTime>
+<generatorID>503A75C9-8F9B-CAD4-9992-704DD5440EE5</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<referedAttribute>5A31A62D-709F-824B-C198-B1F2034970E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E62A29C-16D6-BD77-C092-B2E8703545E6" name="Procedura PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:52:48 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>68296AC8-4544-9547-D8F3-58E3B7B2D5DE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

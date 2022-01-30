@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C6012996-C687-CADF-4B86-E64AB433E736" name="Vychazka">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:51:33 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_vychazka" id="1685391D-BC3B-C213-C9B4-28D23DB31BE5">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:51:43 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum" id="29BD7F91-C71F-6D48-06D6-C7C31220D9D6">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:51:58 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pes" id="AD1CD16D-120E-D86C-26F6-5415DFD25E51">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:04:54 UTC</createdTime>
+<generatorID>D3A6A539-42E8-B21F-ACD1-4198175504E7</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<referedAttribute>5A31A62D-709F-824B-C198-B1F2034970E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_osoba" id="948DDB01-EE66-A773-F820-1597B28C633F">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:05:21 UTC</createdTime>
+<generatorID>053785E9-0A07-94E7-189B-4BDC06BD8415</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<referedAttribute>C2189DDE-E4E2-C6CF-0C9A-8D6913F4E4A3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9633DA2A-D509-4EE5-7371-B2BCD0978732" name="Vychazka PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:51:57 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1685391D-BC3B-C213-C9B4-28D23DB31BE5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48972387-B7AB-8953-33F4-998A0399F183" name="Psi">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává všechny psy, kteří jsou v útulku]]></commentInRDBMS>
+<generatorID>5D81DE4A-D477-54F1-0AF3-9F0D1273C692</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>pes</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pes" id="F3F21815-A939-402C-A7A6-8DBA23288F02">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč psa]]></commentInRDBMS>
+<generatorID>5A31A62D-709F-824B-C198-B1F2034970E9</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmeno" id="B49D8811-6ACE-CE6A-DB36-7C821F46A948">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Jméno psa]]></commentInRDBMS>
+<generatorID>1F8B76CE-2A75-6AE2-1BFF-65F1EF4EAD5D</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detail" id="F6CA34DA-E328-BF73-5E92-DE0F6211ADB5">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Detail o psovi]]></commentInRDBMS>
+<generatorID>51BCEABB-2DB1-69DB-1182-3D709EF3F8CC</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="karantena" id="A9C5F7B4-F9D8-338B-3BE8-E207473C7CBB">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[karantena může mít 2 hodnoty
+0 - pes není v karanténě a může být venčen a rezervován
+1 - pes je v karanténě a nemůže být venčen a rezervován]]></commentInRDBMS>
+<generatorID>BF919161-9B44-4CFD-0E34-505D242689F3</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_plemeno" id="3446AFA1-0C72-7A3E-C2AA-18D56FD67B44">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID plemena, ke kterému pes patří]]></commentInRDBMS>
+<generatorID>73E4AD39-30F6-75D3-0202-E30B6340E95A</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17A40DA3-9217-33EB-4072-F0E0608464AB" referredColumn="BE58DC59-3B1A-0D90-A86B-E152CE825D25"/>
+</associations>
+</Column>
+<Column name="typ_psa" id="D54D02A0-8BC8-70DA-DF80-BF98096886AF">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-08 21:28:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tento atribut určuje typ psa]]></commentInRDBMS>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7B5A52B-1045-9A8B-DBB8-71F2D3570A0C" name="Pes_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>141F7EFE-9608-8475-E552-3BEA221A14E6</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3F21815-A939-402C-A7A6-8DBA23288F02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8F59071-1006-10F0-3264-E5F6B36A6875" name="Pes_Plemena_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>C4A031E2-97B6-2B28-7401-796097E6AEB5</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3446AFA1-0C72-7A3E-C2AA-18D56FD67B44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

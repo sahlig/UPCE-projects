@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5D81DE4A-D477-54F1-0AF3-9F0D1273C692" name="Pes">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:23:46 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pes" id="5A31A62D-709F-824B-C198-B1F2034970E9">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:24:10 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jmeno" id="1F8B76CE-2A75-6AE2-1BFF-65F1EF4EAD5D">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:24:12 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="detail" id="51BCEABB-2DB1-69DB-1182-3D709EF3F8CC">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:24:12 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="karantena" id="BF919161-9B44-4CFD-0E34-505D242689F3">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:24:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[karantena může mít 2 hodnoty
+0 - pes není v karanténě a může být venčen a rezervován
+1 - pes je v karanténě a nemůže být venčen a rezervován]]></commentInRDBMS>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_plemeno" id="73E4AD39-30F6-75D3-0202-E30B6340E95A">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:07:32 UTC</createdTime>
+<generatorID>C4A031E2-97B6-2B28-7401-796097E6AEB5</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<referedAttribute>DF9C3112-91B0-157A-D99F-4A022CEEADD9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="141F7EFE-9608-8475-E552-3BEA221A14E6" name="Pes PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:24:41 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5A31A62D-709F-824B-C198-B1F2034970E9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

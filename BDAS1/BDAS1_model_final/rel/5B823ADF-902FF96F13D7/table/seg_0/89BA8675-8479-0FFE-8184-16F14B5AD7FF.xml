@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89BA8675-8479-0FFE-8184-16F14B5AD7FF" name="Odlozeni">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává záznamy o psech, kteří byli odloženi na určitou dobu majitelem]]></commentInRDBMS>
+<generatorID>8AA2F5F1-D8C9-4D9F-1BA8-9C27ACE46E90</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>odlozeny</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pes" id="36F13B5E-C533-B27A-39B3-532436D810E5">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID psa z databáze]]></commentInRDBMS>
+<generatorID>5A31A62D-709F-824B-C198-B1F2034970E9</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3709B713-4D21-FFF4-C1A0-D1F53359EFF6" referredColumn="F3F21815-A939-402C-A7A6-8DBA23288F02"/>
+</associations>
+</Column>
+<Column name="datum_od" id="487CA679-093F-DC72-0ED2-BE07E3B037C1">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum, kdy byl pes předán útulku]]></commentInRDBMS>
+<generatorID>48222BA1-5716-D743-14EC-7C050A79A011</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_do" id="16E104E0-F443-8A61-2134-4A0A18533485">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum, do kdy bude pes v útulku]]></commentInRDBMS>
+<generatorID>AA5844B4-632C-E2A0-5457-37380B1C8B7C</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_osoba" id="972BCA21-8C0D-881E-7BAF-214324ECA399">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 16:45:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID majitele]]></commentInRDBMS>
+<generatorID>81F1E137-C8B6-F5AB-C5B4-18D93280DEBC</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72B8ADCC-5EF1-AB40-1D9E-E563B8D16185" referredColumn="6EF06846-F6F7-FEF4-9B1B-11DA1CFB2258"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="198DF740-A988-4CAA-C3F5-62121B21A8D7" name="Odlozeny_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>141F7EFE-9608-8475-E552-3BEA221A14E6</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36F13B5E-C533-B27A-39B3-532436D810E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA3CB0EB-A74B-8275-8825-2940CA50B703" name="Odlozeny_Pes_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>EDCBA4AF-6C45-A88B-A727-8C89D05196CB</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36F13B5E-C533-B27A-39B3-532436D810E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FCB011B-D5BD-779A-AEDB-BF8F2B3F3834" name="Odlozeny_Osoba_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 16:45:48 UTC</createdTime>
+<generatorID>7D82D5B3-9043-6690-4244-F66D90A37FA8</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="972BCA21-8C0D-881E-7BAF-214324ECA399"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Plemeno_Pes" directorySegmentName="seg_0" id="C4A031E2-97B6-2B28-7401-796097E6AEB5">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:07:32 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<sourcePk>C1E37286-2FDA-F066-EAD3-DE4E33D2EE9E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>je</nameOnSource>
+<nameOnTarget>patří k</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>595C284F-C0DB-B02E-B427-A61F01701427</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5D81DE4A-D477-54F1-0AF3-9F0D1273C692</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B25DFA37-A7FC-ECA6-0C9D-8DA6B02FE37D" name="Rezervace">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>5C9300C1-B942-AAE5-153D-7F3003CBF6D9</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rezervace" id="F5579EA1-E08C-EFF7-FD25-66EFB6234B05">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč rezervace]]></commentInRDBMS>
+<generatorID>CD0027C0-2720-FC56-395A-AFEC6C020423</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum" id="57B573DC-C8D5-8236-CF1D-B45B4DEAC55E">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum na které je pes rezervován]]></commentInRDBMS>
+<generatorID>E4F178C0-801A-AAF1-7556-CE7E2E9A3462</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pes" id="3E40313C-9A87-D88A-CA3E-F6705641B1F1">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID rezervovaného psa]]></commentInRDBMS>
+<generatorID>8FA24FBD-5512-63B5-0C51-6E349F2E17BF</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBDB714B-7EFE-6970-354D-7CD606871798" referredColumn="F3F21815-A939-402C-A7A6-8DBA23288F02"/>
+</associations>
+</Column>
+<Column name="id_osoba" id="79BA0305-B52A-E62D-7A00-0B7F2B701502">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID osoby, která provedla rezervaci]]></commentInRDBMS>
+<generatorID>A876BEC7-CD48-827F-BA90-81F529A9EBE8</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D84FAB68-9ED8-9A9D-5174-53D25E8BDE0F" referredColumn="6EF06846-F6F7-FEF4-9B1B-11DA1CFB2258"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7876CD4D-4C5F-D004-0E12-C156AF6FB6FC" name="Rezervace_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>5188C79E-B4D8-6EDA-B177-889EF0335881</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5579EA1-E08C-EFF7-FD25-66EFB6234B05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA07C093-C221-50D2-D358-F662C0FFAA7F" name="Rezervace_Osoby_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>07170265-A450-74C4-D535-1F5EAF83ECAE</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79BA0305-B52A-E62D-7A00-0B7F2B701502"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60D4C875-FB16-030D-85F0-02B5352297F5" name="Rezervace_Pes_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>15D817DA-6D54-A88B-B020-3939B06DCF3B</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E40313C-9A87-D88A-CA3E-F6705641B1F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

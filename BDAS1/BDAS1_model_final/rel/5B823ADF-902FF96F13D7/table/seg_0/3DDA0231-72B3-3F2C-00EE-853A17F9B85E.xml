@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DDA0231-72B3-3F2C-00EE-853A17F9B85E" name="VeterinarniKliniky">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává záznamy o veterinárních klinikách, které útulkek využívá nebo využíval]]></commentInRDBMS>
+<generatorID>00E035E4-00FE-7932-2FD1-CDDD3BF8FBCC</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>veterinarniklinika</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_klinika" id="8D728F1C-8AF4-B01B-38D6-59DCAC54A42E">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč veterinární kliniky]]></commentInRDBMS>
+<generatorID>39D928A6-14C5-AAA7-604D-02628155969A</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa" id="9A59FF68-3090-D157-BA99-6DA0423ABA0E">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Adresa veterinární kliniky]]></commentInRDBMS>
+<generatorID>037AA3FC-B290-CFAC-AD65-524455AC739F</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_osoba" id="DFBDD40F-C5FE-A292-D981-DBDFE4D85704">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID osoby, která veterinární kliniku vede]]></commentInRDBMS>
+<generatorID>B4CF08FF-CE9B-04B0-49C2-DC7C6BA392E3</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B40F3B6-825C-B114-C30C-E0742B809F8A" referredColumn="6EF06846-F6F7-FEF4-9B1B-11DA1CFB2258"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B064E4F-D076-1C73-6B98-9E22E0D33F9C" name="VeterinarniKliniky_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>8695E99B-8BB1-4EAA-D1BA-4808D7BA0160</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D728F1C-8AF4-B01B-38D6-59DCAC54A42E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4C18301-339B-08BD-9E07-BE2EB938DC52" name="Kliniky_Osoby_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>B2AEA29B-D355-ABB4-BB10-C1BD953DB73F</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFBDD40F-C5FE-A292-D981-DBDFE4D85704"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

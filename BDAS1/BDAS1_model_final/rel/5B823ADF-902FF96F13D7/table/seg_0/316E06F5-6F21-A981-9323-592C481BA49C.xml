@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="316E06F5-6F21-A981-9323-592C481BA49C" name="Procedury">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává záznamy o procedurách, které psi pdstoupili]]></commentInRDBMS>
+<generatorID>F4E29804-C4B7-22F3-4A3E-62674F93ED39</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<ordsAlias>procedura</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_procedura" id="BAD35BEC-4DE4-45B8-6A4A-55BCA073C0F5">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč procedury]]></commentInRDBMS>
+<generatorID>68296AC8-4544-9547-D8F3-58E3B7B2D5DE</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="4A7B16BD-85C1-5A65-4052-C40035C2BE68">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Popis procedury]]></commentInRDBMS>
+<generatorID>25D63D71-1C4B-9702-36FC-B0B9B1F2C0AA</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum" id="78AB48BE-5EFB-A847-CFF6-61ED0EBBDE76">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum, kdy byla procedura provedena]]></commentInRDBMS>
+<generatorID>9F723550-F6A1-B997-78B3-DA263F76C8CF</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cena" id="2C31D1BB-6246-340F-329E-D334188594F7">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cena provedené procedury]]></commentInRDBMS>
+<generatorID>7B6610EE-1C18-D552-83FA-C3D2FE06417D</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_klinika" id="C64FC02D-EF35-7F50-1447-4FBE9796AD26">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID kliniky, která proceduru provedla]]></commentInRDBMS>
+<generatorID>B06A2A07-CB2C-FA1B-2D83-5B4A064133F5</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80F04429-9F4C-6ADD-C5D3-46D613149087" referredColumn="8D728F1C-8AF4-B01B-38D6-59DCAC54A42E"/>
+</associations>
+</Column>
+<Column name="id_pes" id="0A4CC432-35FB-364C-532E-BBC989030191">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID psa, který podstoupil proceduru]]></commentInRDBMS>
+<generatorID>A2C63129-B925-E1EB-746A-AC9E628C4B50</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="013D71DE-8D8E-747F-B767-2697ADD709BE" referredColumn="F3F21815-A939-402C-A7A6-8DBA23288F02"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A3B567E-7AA6-877F-616A-937F7271B3A9" name="Procedury_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>2E62A29C-16D6-BD77-C092-B2E8703545E6</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAD35BEC-4DE4-45B8-6A4A-55BCA073C0F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F570F490-F7B7-185C-FB0E-9B5E9A47C5CC" name="Procedury_Kliniky_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>DF29BA5F-8CD9-DF3E-AE0F-D9285EEDF23F</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C64FC02D-EF35-7F50-1447-4FBE9796AD26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EAE54CB-80AF-F200-C036-9B7F18F8808F" name="Procedury_Pes_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>503A75C9-8F9B-CAD4-9992-704DD5440EE5</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A4CC432-35FB-364C-532E-BBC989030191"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

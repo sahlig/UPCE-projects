@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C1E43D8-894F-B404-0ECF-BE14E0DC89EC" name="Umrti">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává úmrtí psů]]></commentInRDBMS>
+<generatorID>6A1F1DFF-8D75-A95F-AC53-BB9073F6A580</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_umrti" id="52E65E92-5258-DD08-355E-2F6D4A487CC9">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč úmrtí]]></commentInRDBMS>
+<generatorID>49994F3B-2760-AF5B-2A6B-1856C8714DAB</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum" id="3F927025-8EFF-9541-1D14-52782B99AA80">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum úmrtí]]></commentInRDBMS>
+<generatorID>083FE7AC-A0A8-C8BD-4330-FA18381650F6</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="utra_prir" id="174B02FA-20B3-E23B-3F55-0171B6862A85">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Udává jak pes zemřel, přirozeně nebo byl utracen útulkem
+0 - pes byl utracen
+1 - pes zemřel přirozeně]]></commentInRDBMS>
+<generatorID>967A8A6A-A7C3-A27F-5824-347002ABCF15</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pes" id="63BA8BB4-F351-F982-FD38-FF97EF4BEE81">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID psa, který zemřel]]></commentInRDBMS>
+<generatorID>A5C1560F-2F94-FB10-AB1E-B3C319E95DFB</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C649877-B2B3-4FD0-63FA-CB2A139520F1" referredColumn="F3F21815-A939-402C-A7A6-8DBA23288F02"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="707DCB01-6807-8359-3565-E166908DA0AA" name="Umrti_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>4CD8BE1D-5206-BFF9-F8CF-9983FDD812C1</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52E65E92-5258-DD08-355E-2F6D4A487CC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55EA4B6E-5893-C53D-2A68-03D566801BB1" name="Umrti__IDX">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CF46303E-4316-9ADB-3C26-3DA5A7BF670F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="63BA8BB4-F351-F982-FD38-FF97EF4BEE81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B063C928-52B0-7C28-EAFA-BB522F3C03EE" name="Umrti_Pes_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>CF46303E-4316-9ADB-3C26-3DA5A7BF670F</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63BA8BB4-F351-F982-FD38-FF97EF4BEE81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

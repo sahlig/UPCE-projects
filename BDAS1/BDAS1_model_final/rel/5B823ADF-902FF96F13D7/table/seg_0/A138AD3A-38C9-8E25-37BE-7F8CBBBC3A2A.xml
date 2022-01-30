@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A138AD3A-38C9-8E25-37BE-7F8CBBBC3A2A" name="Licence">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabulka uchovává záznamy o jednotlivých licencích, které musí veterinární klinika mít pro zacházení se psy]]></commentInRDBMS>
+<generatorID>4DCFA810-B1CF-F2A2-7CD7-36B24CA479A4</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_licence" id="615B405C-B77E-5AA3-EB54-A893D77207EF">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primární klíč licence]]></commentInRDBMS>
+<generatorID>8B78FC26-1ED5-F869-E6A8-DD3FFCB75D3E</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_od" id="E3BE35E5-994B-5661-ECA2-0E5B0F838035">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum, od kdy je licence platná]]></commentInRDBMS>
+<generatorID>8EFA04C0-1AD9-4491-9870-A5E51B62AD20</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_do" id="DCF8B12B-8779-43CB-196C-270C17AE0395">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Datum, do kdy je licence platná]]></commentInRDBMS>
+<generatorID>FDBF8F2B-8051-89D6-275D-A81CAD7E194A</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_klinika" id="53E9EF89-A3FC-A60A-C594-FB809B40392D">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID kliniky, které licence patří]]></commentInRDBMS>
+<generatorID>FF48C222-C57C-4354-CB3D-AB877DD0BF68</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F91C30DA-FAFC-EA50-EC3C-8B5DB22A1588" referredColumn="8D728F1C-8AF4-B01B-38D6-59DCAC54A42E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CDB9D0A-5054-FD4A-2888-8DF75748E04C" name="Licence_PK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>7028D2A6-8696-5BB8-63AF-437D84BBAE01</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="615B405C-B77E-5AA3-EB54-A893D77207EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6F0EEA9-CBCF-2B85-3B02-1AFA9B9F8BE7" name="Licence_Kliniky_FK">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:13:02 UTC</createdTime>
+<generatorID>3FBDF4C9-68FC-15BF-44C5-DED1BDA40679</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53E9EF89-A3FC-A60A-C594-FB809B40392D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

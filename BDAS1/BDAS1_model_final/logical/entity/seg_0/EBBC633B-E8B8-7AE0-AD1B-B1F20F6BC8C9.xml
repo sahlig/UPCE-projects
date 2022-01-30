@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EBBC633B-E8B8-7AE0-AD1B-B1F20F6BC8C9" name="AdoptovanyNavraceny">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:49:50 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="datum" id="1727A73D-F0D8-962B-77AB-A226F893AD1A">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:50:09 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adop_nav" id="030F39E1-7999-B8D9-DA28-9E7E5DEC3C2C">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 12:50:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[0 - pes byl adoptovaný
+1 - pes byl navrácený původnímu majiteli]]></commentInRDBMS>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pes" id="38A27BC4-7164-994C-FDA6-573D3BC65A48">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:01:43 UTC</createdTime>
+<generatorID>70678642-453A-8D7C-A395-7A84BCB17BDA</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<referedAttribute>5A31A62D-709F-824B-C198-B1F2034970E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_osoba" id="14CD26B5-A4A6-3F3C-13AC-AFCB1B86320D">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:02:21 UTC</createdTime>
+<generatorID>6FBA6D13-0739-62FE-1BE3-AD572B3B6085</generatorID>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<referedAttribute>C2189DDE-E4E2-C6CF-0C9A-8D6913F4E4A3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

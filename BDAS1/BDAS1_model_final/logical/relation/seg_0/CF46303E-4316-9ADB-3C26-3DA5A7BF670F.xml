@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Pes_Umrti" directorySegmentName="seg_0" id="CF46303E-4316-9ADB-3C26-3DA5A7BF670F">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:09:11 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<sourcePk>141F7EFE-9608-8475-E552-3BEA221A14E6</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>zemřel</nameOnSource>
+<nameOnTarget>patří k</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5D81DE4A-D477-54F1-0AF3-9F0D1273C692</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6A1F1DFF-8D75-A95F-AC53-BB9073F6A580</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

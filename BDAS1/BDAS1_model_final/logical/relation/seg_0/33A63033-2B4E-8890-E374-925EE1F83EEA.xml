@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Osoba_Dar" directorySegmentName="seg_0" id="33A63033-2B4E-8890-E374-925EE1F83EEA">
+<createdBy>Radek</createdBy>
+<createdTime>2021-12-07 13:03:04 UTC</createdTime>
+<ownerDesignName>BDAS1_model_final</ownerDesignName>
+<engineerTo>
+<item key="5B823ADF-2797-278D-51BD-902FF96F13D7" value="true"/>
+</engineerTo>
+<sourcePk>4F1689E0-46F3-2C7A-F988-3DC3BBCE3588</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>daroval</nameOnSource>
+<nameOnTarget>patří k</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>91B43ABB-514A-041D-5494-941DA595C43B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>72547B0A-087E-B770-0C78-E47E31BA5795</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
