@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="780.0" prefWidth="1248.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pujcovna.MainFXController">
+   <children>
+      <GridPane prefHeight="780.0" prefWidth="1248.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.0" minWidth="0.0" prefWidth="130.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="612.0" minWidth="10.0" prefWidth="314.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="514.0" minWidth="10.0" prefWidth="306.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.0" minWidth="10.0" prefWidth="356.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="139.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Pujčovny:">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="novPujcChoice" prefWidth="150.0" />
+                  <Button fx:id="novPujc" mnemonicParsing="false" text="Nová">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="prvPujc" mnemonicParsing="false" text="První">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="prePujc" mnemonicParsing="false" text="↑" />
+                  <Button fx:id="nasPujc" mnemonicParsing="false" text="↓">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="posPujc" mnemonicParsing="false" text="Poslední">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <ChoiceBox fx:id="odsPujcChoice" prefWidth="150.0" />
+                  <Button fx:id="odsPujc" mnemonicParsing="false" text="Odstranit">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Auta:">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="novAuto" mnemonicParsing="false" text="Nové">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="zapAuto" mnemonicParsing="false" text="Zapůjčit">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="odsAuto" mnemonicParsing="false" text="Odstranit">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnOdstranVsude" mnemonicParsing="false" text="Odstranit podle klíče">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnNajit" mnemonicParsing="false" text="Najít zde" />
+                  <Button fx:id="btnNajitVsude" mnemonicParsing="false" text="Najít Všude">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Misc:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="generateIt" mnemonicParsing="false" text="Generuj">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="saveIt" mnemonicParsing="false" text="Ulož do souboru">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="loadIt" mnemonicParsing="false" text="Načti ze souboru" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4">
+               <children>
+                  <Label text="Zapůjčená auta:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="vraZap" mnemonicParsing="false" text="Vrátit">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Mass Destruction:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="deleteCars" mnemonicParsing="false" text="Zruš auta">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="deleteAll" mnemonicParsing="false" text="Zruš všechno">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></Button>
+                  <ChoiceBox fx:id="typIteratoru" prefWidth="150.0" />
+                  <Button fx:id="btnRefresh" mnemonicParsing="false" text="Button" />
+               </children>
+            </VBox>
+            <ListView fx:id="pujcList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+            <ListView fx:id="autoList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
+            <ListView fx:id="zapList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
